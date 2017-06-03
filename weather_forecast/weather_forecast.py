@@ -30,7 +30,7 @@ def get_weather(city_name):
         data_life = json_data_life['HeWeather5'][0]
         
          #未来三天天气预报api
-        url_daily_forecast = ('https://free-api.heweather.com/v5/dailyforecast?city=CN{code}&key=50246ea62fbd405c9315e51d2a1d29c0'.format(code=city_code))
+        url_daily_forecast = ('https://free-api.heweather.com/v5/forecast?city=CN{code}&key=50246ea62fbd405c9315e51d2a1d29c0'.format(code=city_code))
         response_daily_forecast = urllib.request.urlopen(url_daily_forecast)
         weather_html_daily_forecast = response_daily_forecast.read()
         json_data_daily_forecast = json.loads(weather_html_daily_forecast)
