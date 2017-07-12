@@ -1,11 +1,11 @@
-weather_forecast
 天气查询系统
+英文项目名称weather_forecast，中文项目名称观测站
 # 简介 
-可查询全国大部分城市或区的天气信息
+天气查询系统，输入方面用户可输入框输入城市名或者通过下拉框选择城市（如输入北京朝阳），输出该城市的天气信息（如北京朝阳最近三天天气情况、生活指数、经纬度等信息），数据来源于和风天气平台取得的json档
 ## 输入：
-用户输入城市名
+用户通过输入框输入城市名或者通过下拉框选择城市，详见：[templates/entry.html](templates/entry.html)
 ## 输出：
-用户得到输出结果为：城市的三天天气信息丶生活指数丶经纬度
+用户得到输出结果为：城市的三天天气信息丶生活指数丶经纬度等信息，详见：[templates/results.html](templates/results.html)
 ## 从输入到输出，除了flask模块,本组作品使用了：
 ### 模块
 * [urllib.request](https://docs.python.org/3.5/library/urllib.html)
@@ -22,7 +22,7 @@ weather_forecast
 
 2. 前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
-3. 後端伺服器web 响应：[ show_weather.py] show_weather.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)
+3. 後端伺服器web 响应：[ show_weather.py] (show_weather.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](templates/entry.html)
 
 4. 前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"，变数名称(name)为'city'，[templates/entry.html](templates/entry.html)
 
